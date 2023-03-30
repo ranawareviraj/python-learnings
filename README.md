@@ -170,3 +170,57 @@ Python has three main data types:
   string = "Immutability"
   string[0] = 'O' # Will give error
 ```
+- When we assign a new value to str1 (at line 4 below) its identity(reference) changes not the value.
+```
+  str1 = "hello"
+  print(id(str1))
+
+  str1 = "bye"
+  print(id(str1))
+```
+## More About Strings
+**String Slicing**
+- Slicing is the process of obtaining a portion (substring) of a string by using its indices.
+- Given a string, we can use the following template to slice it and obtain a substring:
+```
+  string[start:end] 
+```
+- **start** is the index from where we want the substring to start.
+- **end** is the index where we want our substring to end.
+- The character at the end index in the string, will not be included in the substring obtained through this method.
+
+<img width="625" alt="image" src="https://user-images.githubusercontent.com/112779376/228930727-3a64f1b5-d40b-49c8-9f6e-e1d8f7b99d48.png">
+```
+  my_string = "This is MY string!"
+  print(my_string[0:4]) # From the start till before the 4th index
+  print(my_string[1:7])
+  print(my_string[8:len(my_string)]) # From the 8th index till the end
+```
+- **Slicing with a Step:** Python 3 also allows us to slice a string by defining a step through which we can skip characters in the string.
+- The default step is 1, so we iterate through the string one character at a time.
+- Syntax, Slicing with a Step
+```
+  string[start:end:step]
+```
+- Sample code for slicing with step
+```
+  my_string = "This is MY string!"
+  print(my_string[0:7])  # A step of 1
+  print(my_string[0:7:2])  # A step of 2  -> "Ti s"
+  print(my_string[0:7:5])  # A step of 5  -> "Ti"
+```
+
+
+### The None Keyword(NoneType)
+- Python offers data type called NoneType.
+-  It only has a single value, **None**.
+-  We can assign None to any variable, but we can not create other NoneType variables. 
+```
+  val = None
+  print(val) # prints "None" and returns None
+  print (type(val))
+```
+- None is not a default value for the variable that has not yet been assigned a value.
+- None is not the same as False.
+- None is not an empty string.
+- None is not 0

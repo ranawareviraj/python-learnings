@@ -369,3 +369,33 @@ We follow the string with a % and another string or another string type variable
   print(28 % -10)  # The remainder is negative if the right-hand operand is negative
   print(34.4 % 2.5)  # The remainder can be a float
 ```
+**Precedence**
+- An arithmetic expression containing different operators will be computed on the basis of operator precedence
+- Whenever operators have equal precedence, the expression is computed from the left side:
+```
+# Different precedence
+  print(10 - 3 * 2)  # Multiplication computed first, followed by subtraction
+
+  # Same precedence
+  print(3 * 20 / 5)  # Multiplication computed first, followed by division
+  print(3 / 20 * 5)  # Division computed first, followed by multiplication
+```
+- An expression which is enclosed inside parentheses will be computed first, regardless of operator precedence:
+```
+  print((10 - 3) * 2)  # Subtraction occurs first
+  print((18 + 2) / (10 % 8))  # Addition (18 + 2) and Modulo (10 % 8) occurs first, then division
+```
+
+**Note:**  Python offers many other arithmetic operators.
+
+### Comparison Operators
+|Operator|	Purpose	|Notation|
+|--------|----------|--------|
+|>|	Greate| Than|	In-fix|
+|<	|Less Than	|In-fix|
+|>=	|Greater Than or Equal To	|In-fix|
+|<=	|Less Than or Equal To	|In-fix|
+|==	|Equal To	|In-fix|
+|!=	|Not Equal To	|In-fix|
+|is	|Equal To (Identity)	|In-fix|
+|is not|	Not Equal To (Identity)|	In-fix|

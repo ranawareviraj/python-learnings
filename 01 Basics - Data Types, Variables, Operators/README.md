@@ -291,4 +291,81 @@ We follow the string with a % and another string or another string type variable
     -  logical operators
     -  bitwise operators
 
-###
+### Arithmetic Operators
+|Operator|	Purpose|	Notation|
+|------------- |------------- |------------- |
+|()|	Parentheses|	Encapsulates the Precedent Operation|
+|**	|Exponent	|In-fix|
+|%, *, /, //|	Modulo, Multiplication, Division, Floor Division|	In-fix
+|+, -|	Addition, Subtraction|	In-fix|
+
+- **Addition**:
+```
+  print(10 + 5)
+
+  float1 = 13.65
+  float2 = 3.40
+  print(float1 + float2)
+
+  num = 20
+  flt = 10.5
+  print(num + flt)
+```
+- Summing an integer and floating-point number gives us a floating-point number.
+- Python automatically converts the integer to a floating-point number.  
+    - This applies to all arithmetic operations.
+    
+- **Subtraction**:
+```
+  print(10 - 5)
+
+  float1 = -18.678
+  float2 = 3.55
+  print(float1 - float2)
+
+  num = 20
+  flt = 10.5
+  print(num - flt)
+```
+
+- **Multiplication**:
+```
+  print(40 * 10)
+
+  float1 = 5.5
+  float2 = 4.5
+  print(float1 * float2)
+
+  print(10.2 * 3)
+```
+- **Division**:
+```
+  print(40 / 10)
+
+  float1 = 5.5
+  float2 = 4.5
+  print(float1 / float2)
+  print(12.4 / 2)
+```
+- **Floor Division (Integer Division):** In floor division, the result is floored to the nearest smaller integer.
+- For floor division, we must use the // operator.
+- Unlike normal division, floor division between two integers results in an integer.
+```
+  print(43 // 10)
+
+  float1 = 5.5
+  float2 = 4.5
+  print(5.5 // 4.5)
+  print(12.4 // 2)
+```
+- **Modulo:** A number’s modulo with another number can be found using the % operator:
+```
+  print(10 % 2)
+
+  twenty_eight = 28
+  print(twenty_eight % 10)
+
+  print(-28 % 10)  # The remainder is positive if the right-hand operand is positive
+  print(28 % -10)  # The remainder is negative if the right-hand operand is negative
+  print(34.4 % 2.5)  # The remainder can be a float
+```

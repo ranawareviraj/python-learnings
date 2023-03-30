@@ -190,6 +190,7 @@ Python has three main data types:
 - The character at the end index in the string, will not be included in the substring obtained through this method.
 
 <img width="625" alt="image" src="https://user-images.githubusercontent.com/112779376/228930727-3a64f1b5-d40b-49c8-9f6e-e1d8f7b99d48.png">
+
 ```
   my_string = "This is MY string!"
   print(my_string[0:4]) # From the start till before the 4th index

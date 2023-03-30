@@ -148,3 +148,22 @@
   print(num2 is not num3)  # Both have the same object
   print(list1 is list2)  # Both have the different objects
 ```
+
+### Assignment Operators
+- Summary of Assignment Operators below:
+
+|Operator	Purpose						|Notation 	|
+|-----------|---------------------------|-----------|
+|=			| Assign					|In-fix   	|
+|+=			| Add and Assign			|In-fix		|
+|-=			| Subtract and Assign		|In-fix		|
+|*=			| Multiply and Assign		|In-fix		|
+|/=			| Divide and Assign			|In-fix		|
+|//=		| Divide, Floor, and Assign	|In-fix		|
+|**=		| Raise power and Assign	|In-fix		|
+|%=			| Take Modulo and Assign	|In-fix		|
+||=			| OR and Assign				|In-fix		|
+|&=			| AND and Assign			|In-fix		|
+|^=			| XOR and Assign			|In-fix		|
+|>>=		| Right-shift and Assign	|In-fix		|
+|<<=		| Left-shift and Assign		|In-fix		|

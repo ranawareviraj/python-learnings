@@ -202,7 +202,31 @@ The string data type has numerous utilities that make string computations much e
 
   print(new_house >= house)     # True
 ```
+**Concatenation:**
+- The + operator can be used to merge two strings together:
+```
+  first_half = "Bat"
+  second_half = "man"
 
+  full_name = first_half + second_half
+  print(full_name)    # Batman
+```
+
+- The * operator allows us to multiply a string, resulting in a repeating pattern
+```
+  print("ha" * 3)
+  print(full_name)    # hahaha
+```
+
+**Search:**
+- The in keyword can be used to check if a particular substring exists in another string.
+- If the substring is found, the operation returns True.
+```
+  random_string = "This is a random string"
+
+  print('of' in random_string)  # Check whether 'of' exists in randomString. -> It doesn't -> False
+  print('random' in random_string)  # 'random' exists! -> True
+```
 ### String Slicing
 - Slicing is the process of obtaining a portion (substring) of a string by using its indices.
 - Given a string, we can use the following template to slice it and obtain a substring:

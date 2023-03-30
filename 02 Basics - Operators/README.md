@@ -189,3 +189,11 @@
     num **= 2
     print(num)  # 100.0
 ```
+
+### Logical Operators
+- Examples below
+|Operator	| Purpose	|			Notation|
+|-----------|-----------|-------------------|
+|and		| 	AND		|			In-fix|
+|or			|   OR		|			In-fix|
+|not		| 	NOT		|			Prefix|

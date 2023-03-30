@@ -179,6 +179,30 @@ Python has three main data types:
   print(id(str1))
 ```
 ## More About Strings
+### String Operations
+The string data type has numerous utilities that make string computations much easier. 
+
+**Comparison Operators**
+- Strings are compatible with the comparison operators. Each character has a Unicode value.
+- This allows strings to be compared on the basis of their Unicode values.
+- When two strings have different lengths, the string which comes first in the dictionary is said to have the smaller value.
+``` 
+  print('a' < 'b')  # 'a' has a smaller Unicode value -> True
+
+  house = "Gryffindor"
+  house_copy = "Gryffindor"
+
+  print(house == house_copy)    # True
+
+  new_house = "Slytherin"      
+
+  print(house == new_house)     # False
+
+  print(new_house <= house)     # False
+
+  print(new_house >= house)     # True
+```
+
 ### String Slicing
 - Slicing is the process of obtaining a portion (substring) of a string by using its indices.
 - Given a string, we can use the following template to slice it and obtain a substring:

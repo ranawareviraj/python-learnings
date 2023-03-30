@@ -191,9 +191,37 @@
 ```
 
 ### Logical Operators
-- Examples below
+- Examples below:  
+
 |Operator	| Purpose	|			Notation|
 |-----------|-----------|-------------------|
 |and		| 	AND		|			In-fix|
 |or			|   OR		|			In-fix|
 |not		| 	NOT		|			Prefix|
+- **Usage:**
+```
+    # OR Expression
+    my_bool = True or False
+    print(my_bool)
+
+    # AND Expression
+    my_bool = True and False
+    print(my_bool)
+
+    # NOT expression
+    my_bool = False
+    print(not my_bool)
+```
+- **Bit Value:** In bit terms, the value of True is 1. False corresponds to 0.
+
+### Bitwise Operators
+- Bitwise operators allow us to perform bit-related operations on values.
+
+|Operator	|Purpose				|Notation|
+|---------- |------------------- 	|------|
+|&			|Bitwise AND			|In-fix|
+|\|			|Bitwise OR				|In-fix|
+|^			|Bitwise XOR			|In-fix|
+|~			|Bitwise NOT			|Prefix|
+|<<			|Shift Bits Left		|In-fix|
+|>>			|Shift Bits Right		|In-fix|

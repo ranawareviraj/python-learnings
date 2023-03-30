@@ -160,10 +160,12 @@
 | *=			| Multiply and Assign		|In-fix		|
 | /=			| Divide and Assign			|In-fix		|
 | //=		    | Divide, Floor, and Assign	|In-fix		|
-| ** =		    | Raise power and Assign	|In-fix		|
+| \**=		    | Raise power and Assign	|In-fix		|
 | %=			| Take Modulo and Assign	|In-fix		|
-| |=			| OR and Assign				|In-fix		|
+| \|=			| OR and Assign				|In-fix		|
 | &=			| AND and Assign			|In-fix		|
 | ^=			| XOR and Assign			|In-fix		|
 | >>=		    | Right-shift and Assign	|In-fix		|
 | <<=		    | Left-shift and Assign		|In-fix		|
+
+- 

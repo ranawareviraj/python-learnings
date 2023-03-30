@@ -154,13 +154,13 @@
 
 |Operator	Purpose						|Notation 	|
 |-----------|---------------------------|-----------|
-|=			| Assign					|In-fix   	|
-|+=			| Add and Assign			|In-fix		|
-|-=			| Subtract and Assign		|In-fix		|
-|*=			| Multiply and Assign		|In-fix		|
-|/=			| Divide and Assign			|In-fix		|
-|//=		| Divide, Floor, and Assign	|In-fix		|
-|**=		| Raise power and Assign	|In-fix		|
+| =			| Assign					|In-fix   	|
+| +=			| Add and Assign			|In-fix		|
+| -=			| Subtract and Assign		|In-fix		|
+| *=			| Multiply and Assign		|In-fix		|
+| /=			| Divide and Assign			|In-fix		|
+| //=		| Divide, Floor, and Assign	|In-fix		|
+| ** =		| Raise power and Assign	|In-fix		|
 |%=			| Take Modulo and Assign	|In-fix		|
 ||=			| OR and Assign				|In-fix		|
 |&=			| AND and Assign			|In-fix		|

@@ -168,4 +168,24 @@
 | >>=		    | Right-shift and Assign	|In-fix		|
 | <<=		    | Left-shift and Assign		|In-fix		|
 
-- 
+- Assignment operators copy values
+- Examples
+```
+    num = 10
+    print(num)  # 10
+
+    num += 5
+    print(num)  # 15
+
+    num -= 5
+    print(num)  # 10
+
+    num *= 2
+    print(num)  # 20
+
+    num /= 2
+    print(num)  # 10.0
+
+    num **= 2
+    print(num)  # 100.0
+```

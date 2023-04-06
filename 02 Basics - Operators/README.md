@@ -22,7 +22,7 @@
 |+, -|	Addition, Subtraction|	In-fix|
 
 - **Addition**:
-```
+```python
   print(10 + 5)
 
   float1 = 13.65
@@ -38,7 +38,7 @@
     - This applies to all arithmetic operations.
     
 - **Subtraction**:
-```
+```python
   print(10 - 5)
 
   float1 = -18.678
@@ -51,7 +51,7 @@
 ```
 
 - **Multiplication**:
-```
+```python
   print(40 * 10)
 
   float1 = 5.5
@@ -61,7 +61,7 @@
   print(10.2 * 3)
 ```
 - **Division**:
-```
+```python
   print(40 / 10)
 
   float1 = 5.5
@@ -72,7 +72,7 @@
 - **Floor Division (Integer Division):** In floor division, the result is floored to the nearest smaller integer.
 - For floor division, we must use the // operator.
 - Unlike normal division, floor division between two integers results in an integer.
-```
+```python
   print(43 // 10)
 
   float1 = 5.5
@@ -81,7 +81,7 @@
   print(12.4 // 2)
 ```
 - **Modulo:** A number’s modulo with another number can be found using the % operator:
-```
+```python
   print(10 % 2)
 
   twenty_eight = 28
@@ -94,7 +94,7 @@
 **Precedence**
 - An arithmetic expression containing different operators will be computed on the basis of operator precedence
 - Whenever operators have equal precedence, the expression is computed from the left side:
-```
+```python
 # Different precedence
   print(10 - 3 * 2)  # Multiplication computed first, followed by subtraction
 
@@ -103,7 +103,7 @@
   print(3 / 20 * 5)  # Division computed first, followed by multiplication
 ```
 - An expression which is enclosed inside parentheses will be computed first, regardless of operator precedence:
-```
+```python
   print((10 - 3) * 2)  # Subtraction occurs first
   print((18 + 2) / (10 % 8))  # Addition (18 + 2) and Modulo (10 % 8) occurs first, then division
 ```
@@ -129,7 +129,7 @@
 - The == and != operators compare the values of both operands.
 - The identity operators, is and is not, check whether the two operands are the exact same object.  
 **Examples demonstrating comparison operators**
-```
+```python
   num1 = 5
   num2 = 10
   num3 = 10
@@ -170,7 +170,7 @@
 
 - Assignment operators copy values
 - Examples
-```
+```python
     num = 10
     print(num)  # 10
 
@@ -199,7 +199,7 @@
 |or			|   OR		|			In-fix|
 |not		| 	NOT		|			Prefix|
 - **Usage:**
-```
+```python
     # OR Expression
     my_bool = True or False
     print(my_bool)
@@ -226,7 +226,7 @@
 |<<			|Shift Bits Left		|In-fix|
 |>>			|Shift Bits Right		|In-fix|
 
-```
+```python
     num1 = 10  # Binary value = 01010
     num2 = 20  # Binary Value = 10100
 

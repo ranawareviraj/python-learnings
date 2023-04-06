@@ -26,7 +26,7 @@ There are three types of conditional statements in Python:
 
 <img width="469" alt="image" src="https://user-images.githubusercontent.com/112779376/230457992-a57ad200-b71c-450a-a487-5062124abe81.png">
 
-**Sample Conditional Statement**
+**Sample if Statement**
 ```
 num = 6
 
@@ -60,3 +60,38 @@ if num >= 0 and num <= 100:
             print("The number is in the 60-70 range")
 ```
 - Nested if statements should have corresponding nested indent
+
+### if-else statement
+- If the condition turns out to be False, the code after the else: keyword is executed.
+- The else keyword will be on the same indentation level as the if keyword.
+- The body of else block will be indented one tab to the right just like the if statement.
+**Sample if-else Statement**
+```
+num = 60
+
+if num <= 50:
+    print("The number is less than or equal to 50")
+else:
+    print("The number is greater than 50")
+```
+
+**Sample if-else Statement**
+```
+num = 60
+
+if num <= 50:
+    print("The number is less than or equal to 50")
+else:
+    print("The number is greater than 50")
+```
+
+**Conditional Expression**
+```
+num = 60
+
+output = "The number is less than or equal to 50" \
+    if num <= 50 else "The number is greater than 50"
+
+print(output)
+```
+- Note: The backslash \ in the above code is only a line continuation character that can be used to split a single line into multiple lines.

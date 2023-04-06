@@ -51,7 +51,7 @@ Python has three main data types:
 - The amount of memory an integer occupies depends on its value. 
   For example, 0 will take up 24 bytes whereas 1 would occupy 28 bytes.
  - In Python, all negative numbers start with the - symbol.
-``` 
+```python 
   print(10)  # A positive integer
   print(-3000)  # A negative integer
 
@@ -66,7 +66,7 @@ Python has three main data types:
 - Python allows us to create decimals up to a very high decimal place. This ensures accurate computations for precise values.
 - A float occupies 24 bytes of memory.
 - In Python, 5 is considered to be an integer while 5.0 is a float.
-```
+```python
   print(1.00000000005)  # A positive float
   print(-85.6701)  # A negative float
 
@@ -82,7 +82,7 @@ Python has three main data types:
 - It requires two values.  
   -> The first one will be the real part of the complex number,  
   -> the second value will be the imaginary part.
-```
+```python
   print(complex(10, 20))  # Represents the complex number (10 + 20j)
   print(complex(2.5, -18.2))  # Represents the complex number (2.5 - 18.2j)
 
@@ -97,7 +97,7 @@ Python has three main data types:
 ### Booleans
 - The Boolean (also known as bool) data type allows us to choose between two values: true and false
 - In Python, we can simply use True or False to represent a bool.
-```
+```python
   print(True)
 
   f_bool = False
@@ -111,7 +111,7 @@ Python has three main data types:
 - A blank space inside the string quotation marks is also considered to be a character.
 - To add a multi-line string we can use triple quotes.
 
-```
+```python
   print("Harry Potter!")  # Double quotation marks
 
   got = 'Game of Thrones...'  # Single quotation marks
@@ -128,7 +128,7 @@ Python has three main data types:
 **The Length of a String**
 - The length of a string can be found using the len() built-in function.
 - This length indicates the number of characters in the string:
-```
+```python
   random_string = "I am Batman"  # 11 characters
   print(len(random_string))
 ```
@@ -141,7 +141,7 @@ Python has three main data types:
 **Accessing Characters**
 - Each character in a string can be accessed using its index.
 -  The index must be closed within square brackets, [], and appended to the string.
-```
+```python
   batman = "Bruce Wayne"
 
   first = batman[0]  # Accessing the first character
@@ -159,19 +159,19 @@ Python has three main data types:
 - We can also change our indexing convention by using negative indices.
 - Negative indices start from the opposite end of the string.
 - Hence, the -1 index corresponds to the last character:
-```
+```python
   batman = "Bruce Wayne"
   print(batman[-1])  # Corresponds to batman[10]
   print(batman[-5])  # Corresponds to batman[6]
 ```
 **String Immutability**
 - Once we assign a value to a string, we can’t update it later.
-```
+```python
   string = "Immutability"
   string[0] = 'O' # Will give error
 ```
 - When we assign a new value to str1 (at line 4 below) its identity(reference) changes not the value.
-```
+```python
   str1 = "hello"
   print(id(str1))
 
@@ -186,7 +186,7 @@ The string data type has numerous utilities that make string computations much e
 - Strings are compatible with the comparison operators. Each character has a Unicode value.
 - This allows strings to be compared on the basis of their Unicode values.
 - When two strings have different lengths, the string which comes first in the dictionary is said to have the smaller value.
-``` 
+```python
   print('a' < 'b')  # 'a' has a smaller Unicode value -> True
 
   house = "Gryffindor"
@@ -204,7 +204,7 @@ The string data type has numerous utilities that make string computations much e
 ```
 **Concatenation:**
 - The + operator can be used to merge two strings together:
-```
+```python
   first_half = "Bat"
   second_half = "man"
 
@@ -213,7 +213,7 @@ The string data type has numerous utilities that make string computations much e
 ```
 
 - The * operator allows us to multiply a string, resulting in a repeating pattern
-```
+```python
   print("ha" * 3)
   print(full_name)    # hahaha
 ```
@@ -221,7 +221,7 @@ The string data type has numerous utilities that make string computations much e
 **Search:**
 - The in keyword can be used to check if a particular substring exists in another string.
 - If the substring is found, the operation returns True.
-```
+```python
   random_string = "This is a random string"
 
   print('of' in random_string)  # Check whether 'of' exists in randomString. -> It doesn't -> False
@@ -230,7 +230,7 @@ The string data type has numerous utilities that make string computations much e
 ### String Slicing
 - Slicing is the process of obtaining a portion (substring) of a string by using its indices.
 - Given a string, we can use the following template to slice it and obtain a substring:
-```
+```python
   string[start:end] 
 ```
 - **start** is the index from where we want the substring to start.
@@ -239,7 +239,7 @@ The string data type has numerous utilities that make string computations much e
 
 <img width="625" alt="image" src="https://user-images.githubusercontent.com/112779376/228930727-3a64f1b5-d40b-49c8-9f6e-e1d8f7b99d48.png">
 
-```
+```python
   my_string = "This is MY string!"
   print(my_string[0:4]) # From the start till before the 4th index
   print(my_string[1:7])
@@ -249,11 +249,11 @@ The string data type has numerous utilities that make string computations much e
 - Python 3 also allows us to slice a string by defining a step through which we can skip characters in the string.
 - The default step is 1, so we iterate through the string one character at a time.
 - Syntax, Slicing with a Step
-```
+```python
   string[start:end:step]
 ```
 - Sample code for slicing with step
-```
+```python
   my_string = "This is MY string!"
   print(my_string[0:7])  # A step of 1
   print(my_string[0:7:2])  # A step of 2  -> "Ti s"
@@ -263,7 +263,7 @@ The string data type has numerous utilities that make string computations much e
 - For String slicing specifying the start and end indices is optional.
 - If **start** is not provided, the substring will have all the characters until the **end** index.
 - If **end** is not provided, the substring will begin from the start index and go all the way to the **end**.
-```
+```python
   my_string = "This is MY string!"
   print(my_string[:8])  # All the characters before 'M' -> This is
   print(my_string[8:])  # All the characters starting from 'M' -> MY string!
@@ -282,7 +282,7 @@ Following are some use cases of string formatting:
 - The %s is the format specifier, which tells Python to insert the text here
 - Python will insert a string if:  
 We follow the string with a % and another string or another string type variable.
-```
+```python
   string1 = "I like %s" % "Python"
   print(string1) # 'I like Python'
 
@@ -295,7 +295,7 @@ We follow the string with a % and another string or another string type variable
 ```
 **Inserting Integers Within a String**
 - The %i is the format specifier, which tells Python to insert the integers here.
-```
+```python
   my_string = "%i + %i = %i" % (1,2,3)
   print(my_string) # '1 + 2 = 3'
 ```
@@ -304,7 +304,7 @@ We follow the string with a % and another string or another string type variable
 - %f is used to substitute floats within a string. 
 - Note, string1 includes extra zeroes. To limit to two decimal places, we can use %.2f.
 - If we pass a float that’s greater than two decimal places, then %.2f will round off the number to 2 decimal places.
-```
+```python
   string1 = "%f" % (1.11)
   print(string1) # '1.110000'
 
@@ -319,7 +319,7 @@ We follow the string with a % and another string or another string type variable
 - Python offers data type called NoneType.
 - It only has a single value, **None**.
 - We can assign None to any variable, but we can not create other NoneType variables. 
-```
+```python
   val = None
   print(val) # prints "None" and returns None
   print (type(val))

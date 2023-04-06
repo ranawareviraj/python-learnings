@@ -112,7 +112,7 @@ else:
 ```
 - **Note:** An if-elif statement can exist on its own without an else block at the end. However, an elif cannot exist without an if statement preceding it (which naturally makes sense).
 
-##Loops in Python
+## Loops in Python
 There are two types of loops that we can use in Python:
 - The **for** loop
 - The **while** loop

@@ -5,7 +5,7 @@ This sections describes Conditionals and Loops in Python
 
 ## Conditionals
 To handle conditional statements, Python follows a particular convention:
-```
+```python
 if condtional statement is True:
     # execute expression1
     pass
@@ -27,7 +27,7 @@ There are three types of conditional statements in Python:
 <img width="469" alt="image" src="https://user-images.githubusercontent.com/112779376/230457992-a57ad200-b71c-450a-a487-5062124abe81.png">
 
 **Sample if Statement**
-```
+```python
 num = 6
 
 if (num == 5):  # The condition is true
@@ -38,7 +38,7 @@ if num > 5:  # The condtion is false
 ```
 
 **Conditions with Logical Operators**
-```
+```python
 num = 12
 
 if num % 2 == 0 and num % 3 == 0 and num % 4 == 0:
@@ -51,7 +51,7 @@ if (num % 5 == 0 or num % 6 == 0):
 ```
 
 **Nested if Statements**
-```
+```python
 num = 63
 
 if num >= 0 and num <= 100:
@@ -66,7 +66,7 @@ if num >= 0 and num <= 100:
 - The else keyword will be on the same indentation level as the if keyword.
 - The body of else block will be indented one tab to the right just like the if statement.
 **Sample if-else Statement**
-```
+```python
 num = 60
 
 if num <= 50:
@@ -76,7 +76,7 @@ else:
 ```
 
 **Sample if-else Statement**
-```
+```python
 num = 60
 
 if num <= 50:
@@ -86,7 +86,7 @@ else:
 ```
 
 **Conditional Expression**
-```
+```python
 num = 60
 
 output = "The number is less than or equal to 50" \
@@ -98,7 +98,7 @@ print(output)
 
 ### if-elif-else
 - It is the most comprehensive conditional statement because it allows us to create multiple conditions easily.
-```
+```python
 light = "Red"
 
 if light == "Green":

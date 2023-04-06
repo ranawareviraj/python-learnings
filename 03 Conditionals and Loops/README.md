@@ -95,3 +95,19 @@ output = "The number is less than or equal to 50" \
 print(output)
 ```
 - Note: The backslash \ in the above code is only a line continuation character that can be used to split a single line into multiple lines.
+
+### if-elif-else
+- It is the most comprehensive conditional statement because it allows us to create multiple conditions easily.
+```
+light = "Red"
+
+if light == "Green":
+    print("Go")
+elif light == "Yellow":
+    print("Caution")
+elif light == "Red":
+    print("Stop")
+else:
+    print("Incorrect light signal")
+```
+- **Note:** An if-elif statement can exist on its own without an else block at the end. However, an elif cannot exist without an if statement preceding it (which naturally makes sense).

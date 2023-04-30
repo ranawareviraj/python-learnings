@@ -12,7 +12,7 @@ The four primary built-in data structures offered in Python are:
 - Dictionary
 - Set
 
-### List:
+### 1. List:
 - The contents of a list are enclosed by square brackets, [].
 - Lists are **ordered**.
 - Elements are stored linearly at a specific **index**.
@@ -101,15 +101,89 @@ Using **range():**
   print(last_house)
   print(houses)
 ```
-
-
+- If we need to delete a particular value from a list, we can use the remove() method. 
+Syntax
 ```python
+  a_list.remove(element_to_be_deleted)
+```
+Example
+```python
+  houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]
+  print(houses)
+  houses.remove("Ravenclaw")
+  print(houses)
 ```
 
-
+**List Slicing**
+- Slicing a list gives us a sublist
 ```python
+  num_list = [1, 2, 3, 4, 5, 6, 7, 8]
+  print(num_list[2:5]) # returns elements from index 2 - 4 => [3, 4, 5]
+  print(num_list[0::2]) # returns every 2nd element startig from 0 => [1, 3, 5, 7]
 ```
 
+**Index Search**
+- The index() method returns the index of a given value.
+```python
+  cities = ["London", "Paris", "Los Angeles", "Beirut"]
+  print(cities.index("Los Angeles"))  # It is at the 2nd index
+```
+
+**Check Existence in List**
+- We just want to verify the existence of an element in a list by using the **in** operator:
+```python
+  cities = ["London", "Paris", "Los Angeles", "Beirut"]
+  print("London" in cities) # prints True
+  print("London" not in cities) # prints False
+```
+
+**Sorting the List**
+- We can sort the list using **sort()** method
+```python
+  num_list = [20, 40, 10, 50.4, 30, 100, 5]
+  num_list.sort()
+  print(num_list) # prints [5, 10, 20, 30, 40, 50.4, 100]
+```
+
+**Note:** Official List [documentation](https://docs.python.org/3/tutorial/datastructures.html).
+
+
+### 2. Tuples:
+- A tuple is very similar to a list, except for the fact that its contents cannot be changed. i.e, a tuple is **immutable**. 
+- The contents of a tuple are enclosed in parentheses, ().
+- They Tuples are ordered, and hence, follow the linear index notation.
+- Creating a Tuple
+```python
+  car = ("Ford", "Raptor", 2019, "Red")
+  print(car)
+
+  # Length
+  print(len(car))
+
+  # Indexing
+  print(car[1])
+
+  # Slicing
+  print(car[2:])
+```
+- Merging Tuples
+```python
+  heroes1 = ("Batman", "Bruce Wayne")
+  heroes2 = ("Wonder Woman", "Diana Prince")
+  avengers = heroes1 + heroes2
+  print(avengers)
+```
+- Check Existence in a Tuples - use **in** operator
+```python
+  cities = ("London", "Paris", "Los Angeles", "Tokyo")
+  print("Moscow" in cities)
+```
+- Get the index of a particular value - use **index()** function
+```python
+  cities = ("London", "Paris", "Los Angeles", "Tokyo")
+  print(cities.index("Tokyo")) # prints 3 
+```
+- **Note:** Since tuples are immutable, we can’t add or delete elements from them. Furthermore, it isn’t possible to append another tuple to an existing tuple.
 
 ```python
 ```

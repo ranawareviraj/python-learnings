@@ -117,7 +117,7 @@ There are two types of loops that we can use in Python:
 - The **for** loop
 - The **while** loop
 
-- In a for loop, we need to define three main things:  
+- In a **for** loop, we need to define three main things:  
     - The name of the iterator
     - The sequence to be traversed
     - The set of operations to perform
@@ -163,7 +163,20 @@ print(count_greater)
 ```
 - Note: In the case above (using iterator), altering num will not alter the actual value in the list
 
-**The break Keyword:**
+
+**While Loop:**
+- In a **while** loop, the number of iterations is based solely on the condition associated with it.
+```python
+n = 2  # Could be any number
+power = 0
+val = n
+while val < 1000:
+    power += 1
+    val *= n
+print(power)
+```
+
+The **break** Keyword:
 - It can break the loop whenever we want. We can make our loop to break when specific condition is met.
 ```python
 n = 50
@@ -181,7 +194,7 @@ for n1 in num_list:
         break  # Break outer loop if a pair is found
 ```
 
-**The continue Keyword:**
+The **continue** Keyword:
 - When the continue keyword is used, the rest of that particular iteration (only) is skipped.
 ```python
 num_list = list(range(0, 10))
@@ -193,7 +206,7 @@ for num in num_list:
 ```
 - On executing the above code, 3 and 6 will not be printed. 
 
-**The pass Keyword**
+The **pass** Keyword:
 - In all practical meaning, the pass statement does nothing to the code execution. 
 - It can be used to represent an area of code that needs to be written. 
 - It is simply there to assist you when you haven’t written a piece of code but still need your entire program to execute. (Similar to **//TODO** in Java)

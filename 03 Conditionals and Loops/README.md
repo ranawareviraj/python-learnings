@@ -162,3 +162,38 @@ for num in float_list:  # Iterator traverses to the last index of the list
 print(count_greater)
 ```
 - Note: In the case above (using iterator), altering num will not alter the actual value in the list
+
+**The break Keyword:**
+- It can break the loop whenever we want. We can make our loop to break when specific condition is met.
+```python
+n = 50
+num_list = [10, 25, 4, 23, 6, 18, 27, 47]
+found = False  # This bool will become true once a pair is found
+
+for n1 in num_list:
+    for n2 in num_list:
+        if(n1 != n2):
+            if(n1 + n2 == n):
+                found = True  # Set found to True
+                break  # Break inner loop if a pair is found
+    if found:
+        print(n1, n2) # Print the pair
+        break  # Break outer loop if a pair is found
+```
+
+**The continue Keyword:**
+- When the continue keyword is used, the rest of that particular iteration (only) is skipped.
+```python
+num_list = list(range(0, 10))
+
+for num in num_list:
+    if num == 3 or num == 6:
+        continue
+    print(num)
+```
+- On executing the above code, 3 and 6 will not be printed. 
+
+**The pass Keyword**
+- In all practical meaning, the pass statement does nothing to the code execution. 
+- It can be used to represent an area of code that needs to be written. 
+- It is simply there to assist you when you haven’t written a piece of code but still need your entire program to execute. (Similar to **//TODO** in Java)

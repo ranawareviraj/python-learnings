@@ -393,19 +393,93 @@ Note: A set() Constructor allows us to create an empty constructor.
   # returns the elements which are only present in set_A
   print(set_A - set_B)            # alternatively, set_A.difference(set_B)
 
-   # returns the elements which are only present in set_B
-   print(set_B - set_A)            # alternatively, set_B.difference(set_A)
+  # returns the elements which are only present in set_B
+  print(set_B - set_A)            # alternatively, set_B.difference(set_A)
 ```
 
 ### Data Structure Conversion
+- General format for converting from one data structure to another
 ```python
-
+destination_structure_name(source_structure_name)
 ```
 
+**Converting to a List**
+- We can convert a tuple, set, or dictionary to a list using the list() constructor
 ```python
+  star_wars_tuple = ("Anakin", "Darth Vader", 1000)
+  star_wars_set = {"Anakin", "Darth Vader", 1000}
 
+  star_wars_list = list(star_wars_tup)  # Converting from tuple
+  star_wars_list = list(star_wars_set)  # Converting from set
+```
+- While converting a dictionary to list, only the keys will be converted to a list.
+```python
+  star_wars_dict = {1: "Anakin", 2: "Darth Vader", 3: 1000}
+
+  # Converting from dictionary
+  star_wars_list = list(star_wars_dict)   
+  print(star_wars_list)                   # prints: [1, 2, 3]
+```
+- In case of dictionaries dict.items() convert it into an iterable of (key, value) tuples. Which can be casted to a list.
+```python
+  star_wars_dict = {1: "Anakin", 2: "Darth Vader", 3: 1000}
+
+  # Get a list of dict entries as tuples
+  star_wars_list = list(star_wars_dict.items())
+
+  print(star_wars_list)     # prints list: [(1, 'Anakin'), (2, 'Darth Vader'), (3, 1000)]
 ```
 
+**Converting to a Tuple**
+- Any data structure can be converted to a tuple using the tuple() constructor.
 ```python
+  star_wars_list = ["Anakin", "Darth Vader", 1000]
+  star_wars_set = {"Anakin", "Darth Vader", 1000}
+  star_wars_dict = {1: "Anakin", 2: "Darth Vader", 3: 1000}
 
+  star_wars_tuple = tuple(star_wars_list)   # Converting from list
+  print(star_wars_tuple)                    # prints:('Anakin', 'Darth Vader', 1000)
+
+  star_wars_tuple = tuple(star_wars_set)    # Converting from set
+  print(star_wars_tuple)                    # prints:(1000, 'Anakin', 'Darth Vader')
+
+  star_wars_tuple = tuple(star_wars_dict)   # Converting from dictionary - only keys will be converted
+  print(star_wars_tuple)                    # prints: (1, 2, 3)
+```
+
+**Converting to a Set**
+- The set() constructor can be used to create a set out of any other data structure.
+- In the case of a dictionary, only the keys will be converted to a set.
+```python
+  star_wars_list = ["Anakin", "Darth Vader", 1000]
+  star_wars_tuple = ("Anakin", "Darth Vader", 1000)
+  star_wars_dict = {1: "Anakin", 2: "Darth Vader", 3: 1000}
+
+  star_wars_set = set(star_wars_list)   # Converting from list
+  print(star_wars_set)                  # prints: {1000, 'Anakin', 'Darth Vader'}
+
+  star_wars_set = set(star_wars_tuple)  # Converting from tuple
+  print(star_wars_set)                  # prints: {1000, 'Anakin', 'Darth Vader'}
+
+  star_wars_set = set(star_wars_dict)   # Converting from dictionary
+  print(star_wars_set)                  # prints:{1, 2, 3} 
+```
+
+**Converting to a Dictionary**
+- The dict() constructor cannot be used in the same way as the others because it requires key-value pairs instead of just values.
+- To convert another data structure to a dictionary the data must be stored in a format where pairs exist.  
+  - e.g For example, a list of tuples where the length of each tuple is 2 can be converted into a dictionary.
+```python
+  star_wars_list = [[1,"Anakin"], [2,"Darth Vader"], [3, 1000]]
+  star_wars_tuple = ((1, "Anakin"), (2, "Darth Vader"), (3, 1000))
+  star_wars_set = {(1, "Anakin"), (2, "Darth Vader"), (3, 1000)}
+
+  star_wars_dict = dict(star_wars_list)   # Converting from list
+  print(star_wars_dict)                   # prints: {1: 'Anakin', 2: 'Darth Vader', 3: 1000}
+
+  star_wars_dict = dict(star_wars_tuple)  # Converting from tuple
+  print(star_wars_dict)                   # prints: {1: 'Anakin', 2: 'Darth Vader', 3: 1000}
+
+  star_wars_dict = dict(star_wars_set)  # Converting from set
+  print(star_wars_dict)                   # prints: {1: 'Anakin', 2: 'Darth Vader', 3: 1000}
 ```

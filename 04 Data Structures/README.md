@@ -6,6 +6,7 @@ This sections describes **Data Structures** in Python.
 ## Data Structures in Python
 Python is equipped with several built-in data structures to help us efficiently handle large amounts of data.
 
+### Primary Data Structures in Python
 The four primary built-in data structures offered in Python are:
 - List
 - Tuple
@@ -483,3 +484,62 @@ destination_structure_name(source_structure_name)
   star_wars_dict = dict(star_wars_set)  # Converting from set
   print(star_wars_dict)                   # prints: {1: 'Anakin', 2: 'Darth Vader', 3: 1000}
 ```
+
+### Additional important Data Structures in Python
+Below are the data structures that are frequently used in Python in addition to primary data structure:
+- deque
+- defaultdict
+- heap
+- Counter
+
+### 1. deque:
+
+
+
+### 2. defaultdict:
+The **defaultdict** is a subclass of Python’s dict class.
+
+**Counting the occurrence of words: Regular dict**
+```python
+  sentence = "The red for jumped over the fence and ran to the zoo for food"
+  words = sentence.split(' ')
+  reg_dict = {}
+  
+  for word in words:
+      if word in reg_dict:
+          reg_dict[word] += 1
+      else:
+          reg_dict[word] = 1
+  
+  print(reg_dict)
+```
+
+**Counting the occurrence of words: defaultdict**
+```python
+default_dict = defaultdict(int)
+  for word in words:
+      default_dict[word] += 1
+  
+  print(default_dict)
+```
+- The defaultdict will automatically assign zero as the value to any key it doesn’t already have in it.
+- Setting the default_factory (first argument to defaultdict(default_factory)) to int makes it useful for counting
+
+**The defaultdict from list**
+```python
+  from collections import defaultdict
+  
+  my_list = [(1234, 100.23), (345, 10.45), (1234, 75.00),
+             (345, 222.66), (678, 300.25), (1234, 35.67)]
+  
+  my_dict = defaultdict(list)
+  for acct_num, value in my_list:
+      my_dict[acct_num].append(value)
+  
+  # alternatively: 
+  # for key, value in my_list:
+  #     my_dict.setdefault(key, []).append(value)
+  
+  print(my_dict)
+```
+

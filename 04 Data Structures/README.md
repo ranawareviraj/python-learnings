@@ -1,12 +1,11 @@
-# Python Learnings
+# Python Learnings: Data Structures in Python
 ### Author: Viraj Ranaware
 
 This sections describes **Data Structures** in Python.
 
-## Data Structures in Python
 Python is equipped with several built-in data structures to help us efficiently handle large amounts of data.
 
-### Primary Data Structures in Python
+## Primary Data Structures in Python
 The four primary built-in data structures offered in Python are:
 - List
 - Tuple
@@ -192,7 +191,7 @@ Example
 
 <img width="677" alt="image" src="https://user-images.githubusercontent.com/112779376/235673897-b69ceb95-ad69-479c-b5ca-ebda26f9ec33.png">
 
-**Creating a Dictionary **
+**Creating a Dictionary**
 ```python
   empty_dict = {}   # Empty dictionary - most popular approach
   print(empty_dict) # prints: {} 
@@ -398,7 +397,7 @@ Note: A set() Constructor allows us to create an empty constructor.
   print(set_B - set_A)            # alternatively, set_B.difference(set_A)
 ```
 
-### Data Structure Conversion
+## Data Structure Conversion
 - General format for converting from one data structure to another
 ```python
 destination_structure_name(source_structure_name)
@@ -485,7 +484,7 @@ destination_structure_name(source_structure_name)
   print(star_wars_dict)                   # prints: {1: 'Anakin', 2: 'Darth Vader', 3: 1000}
 ```
 
-### Additional important Data Structures in Python
+## Additional important Data Structures in Python
 Below are the data structures that are frequently used in Python in addition to primary data structure:
 - deque
 - defaultdict

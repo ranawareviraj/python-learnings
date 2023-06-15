@@ -493,9 +493,51 @@ Below are the data structures that are frequently used in Python in addition to 
 - Counter
 
 ### 1. deque:
+- Deques are a generalization of stacks and queues.
+- Deques support memory efficient appends and pops from either side of the deque with O(1) performance in either direction.
+- A deque accepts a maxlen argument which sets the bounds for the deque. Otherwise the deque will grow to an arbitrary size.
+- When a bounded deque is full, any new items added will cause the same number of items to be popped off the other end.
+- As a general rule,
+    - If we need **fast appends or fast pop**s, use a **deque**.
+    - If we need **fast random access**, use a **list**.
+```python
+  # Declaration: we will use deque from the collections module
+  import from collections import deque
+  queue = deque()
+  
+  # If we want to initialize deque with some initial values:
+  queue = deque([1, 2, 3])
+  
+  # Enqueueing/adding elements (added to right):
+  queue.append(4)   # Now queue is: [1, 2, 3, 4]
+  queue.append(5)   # Now queue is: [1, 2, 3, 4, 5]
+  
+  # Dequeuing/removing elements:
+  queue.popleft() # returns 1  Now queue is: [2, 3, 4, 5]
+  queue.popleft() # returns 2  Now queue is: [3, 4, 5]
+  
+  # Check element at front of queue (next element to be removed)
+  queue[0] # 3
+  
+  # Get size
+  len(queue) # 3
 
+  # Adding elements to the left (start of the queue:
+  queue.appendleft(2)   # Now queue is: [2, 3, 4, 5]
+  queue.appendleft(1)   # Now queue is: [1, 2, 3, 4, 5]
+  
+  # Removing elements from right (end of the queue):
+  queue.pop() # returns 5  Now queue is: [1, 2, 3, 4]
+  queue.pop() # returns 4  Now queue is: [1, 2, 3]
 
+  # Iterating over queue:
+  while queue:
+    print(queue.popleft())
 
+  # Checks if queue is empty
+  if not queue:
+    print("Queue is empty!")
+```
 ### 2. defaultdict:
 The **defaultdict** is a subclass of Python’s dict class.
 

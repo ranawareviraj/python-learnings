@@ -584,4 +584,43 @@ default_dict = defaultdict(int)
   
   print(my_dict)
 ```
+### 3. heapq:
+- The **heapq** module provides an implementation of the **heap queue** or **priority queue** algorithm.
+- The heapq only implements min heaps
+```python
+  # In Python, we use the heapq module for heap ds
+  from heapq import *
+  
+  # Declaration: heapq does not give you a heap data structure.
+  # You just use a normal list, and heapq provides you with
+  # methods that can be used on this list to perform heap operations
 
+  # Declare a heap
+  heap = []
+  
+  # Add to heap
+  heappush(heap, 1)
+  heappush(heap, 2)
+  heappush(heap, 3)
+  heappush(heap, 4)
+  
+  # Check minimum element
+  print(heap[0]) # prints 1
+  
+  # Pop minimum element
+  heappop(heap) # removes 1 - min element
+  
+  # Get size
+  len(heap) # 3
+  
+  # The numbers will be printed in sorted order
+  while heap:
+    print(heapq.heappop(heap)) # 1 2 3 4
+  
+  # Convert a list to a heap in linear time
+  nums = [43, 2, 13, 634, 120]
+  heapify(nums)
+  
+  # Now, we can use heappush and heappop on nums
+  # and nums[0] will always be the minimum element
+```

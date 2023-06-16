@@ -1,4 +1,4 @@
 # Python Learnings
 ### Author: Viraj Ranaware
 
-This sections describes Data Structures in Python
+This sections describes important libraries in Python
